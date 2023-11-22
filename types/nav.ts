@@ -7,6 +7,6 @@ export interface NavItem {
 
 export interface Projects {
   title: string
-  href: string
-  description: string
+  href?: string
+  description?: string
 }
