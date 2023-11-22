@@ -42,12 +42,11 @@ export default function IndexPage() {
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
           <h2 className="text-3xl font-extrabold leading-[1.1] sm:text-3xl md:text-4xl">
-            Features
+            Tech Stack
           </h2>
           <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-            This project is an experiment to see how a modern app, with features
-            like auth, subscriptions, API routes, and static pages would work in
-            Next.js 13 app dir.
+            A list of all the tools and technologies I have used through the
+            years.
           </p>
         </div>
         <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
@@ -139,8 +138,9 @@ export default function IndexPage() {
         </div>
         <div className="mx-auto text-center md:max-w-[58rem]">
           <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-            Taxonomy also includes a blog and a full-featured documentation site
-            built using Contentlayer and MDX.
+            This list is not comprehensive. These are my go to digital products
+            for the job, there are many more technologies that make up a full
+            stack application.
           </p>
         </div>
       </section>
