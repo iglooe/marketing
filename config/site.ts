@@ -4,17 +4,6 @@ export const siteConfig = {
   name: "Derek",
   description:
     "Beautifully designed components built with Radix UI and Tailwind CSS.",
-  mainNav: [
-    {
-      title: "Home",
-      href: "/",
-    },
-    {
-      title: "Projects",
-      href: "/projects",
-      description: "Project that I have worked on.",
-    },
-  ],
   projects: [
     {
       title: "E-Commerce Shop",
@@ -44,6 +33,7 @@ export const siteConfig = {
   links: {
     twitter: "https://twitter.com/VinceBarter",
     github: "https://github.com/iglooe?tab=repositories",
+    git_repo: "https://github.com/iglooe/marketing",
     docs: "https://ui.shadcn.com",
   },
 }

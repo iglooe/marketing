@@ -25,6 +25,7 @@ export default function IndexPage() {
             className={buttonVariants()}
           >
             Documentation
+            <span className="sr-only">Link</span>
           </Link>
           <Link
             target="_blank"
@@ -33,6 +34,7 @@ export default function IndexPage() {
             className={buttonVariants({ variant: "outline" })}
           >
             GitHub
+            <span className="sr-only">GitHub</span>
           </Link>
         </div>
       </section>

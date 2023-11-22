@@ -19,6 +19,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
               className="font-medium underline underline-offset-4"
             >
               derek
+              <span className="sr-only">twitter link</span>
             </a>
             . Hosted on{" "}
             <a
@@ -28,6 +29,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
               className="font-medium underline underline-offset-4"
             >
               Vercel
+              <span className="sr-only">vercel link</span>
             </a>
             . The source code is available on{" "}
             <a
@@ -37,6 +39,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
               className="font-medium underline underline-offset-4"
             >
               GitHub
+              <span className="sr-only">My github link</span>
             </a>
             .
           </p>
