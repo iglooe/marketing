@@ -1,7 +1,7 @@
 import * as React from "react"
 import Link from "next/link"
 
-import { NavItem, Projects } from "@/types/nav"
+import { Projects } from "@/types/nav"
 import { siteConfig } from "@/config/site"
 import { Icons } from "@/components/icons"
 
