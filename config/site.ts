@@ -28,6 +28,18 @@ export const siteConfig = {
       description:
         "A note taking app, with all the familar features of Notion.",
     },
+    {
+      title: "Birdle",
+      href: "https://github.com/iglooe/wordle-clone",
+      description:
+        "A replayable Wordle clone that uses a JSON server as an API.",
+    },
+    {
+      title: "Dictionary",
+      href: "https://github.com/iglooe/dictionary",
+      description:
+        "A fully functional dictionary app that uses the free dictionary API to retrieve data.",
+    },
   ],
   links: {
     twitter: "https://twitter.com/VinceBarter",

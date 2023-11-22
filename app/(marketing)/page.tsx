@@ -9,12 +9,12 @@ export default function IndexPage() {
       <section className="container grid items-center justify-center gap-6 pb-8 pt-6 md:py-20">
         <div className="flex max-w-[980px] flex-col items-center gap-2">
           <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-5xl">
-            Beautifully designed components <br className="hidden sm:inline" />
-            built with Radix UI and Tailwind CSS.
+            I&apos;m Derek and I develop full-stack web applications. Made with
+            all the latest technologies customized to your needs.
           </h1>
           <p className="max-w-[700px] text-lg text-muted-foreground">
-            Accessible and customizable components that you can copy and paste
-            into your apps. Free. Open Source. And Next.js 13 Ready.
+            Accessible and customizable websites that you can call yours. Be
+            sure to check out my deployed projects and open source repositories.
           </p>
         </div>
         <div className="flex items-center justify-center gap-4">
@@ -70,21 +70,8 @@ export default function IndexPage() {
               </svg>
               <div className="space-y-2">
                 <h3 className="font-bold">React 18</h3>
-                <p className="text-sm">
-                  Server and Client Components. Use hook.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="relative overflow-hidden rounded-lg border bg-background p-2">
-            <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-              <svg viewBox="0 0 24 24" className="h-12 w-12 fill-current">
-                <path d="M0 12C0 5.373 5.373 0 12 0c4.873 0 9.067 2.904 10.947 7.077l-15.87 15.87a11.981 11.981 0 0 1-1.935-1.099L14.99 12H12l-8.485 8.485A11.962 11.962 0 0 1 0 12Zm12.004 12L24 12.004C23.998 18.628 18.628 23.998 12.004 24Z" />
-              </svg>
-              <div className="space-y-2">
-                <h3 className="font-bold">Database</h3>
                 <p className="text-sm text-muted-foreground">
-                  ORM using Prisma and deployed on PlanetScale.
+                  Server and Client Components. Use hook.
                 </p>
               </div>
             </div>
@@ -105,6 +92,19 @@ export default function IndexPage() {
           </div>
           <div className="relative overflow-hidden rounded-lg border bg-background p-2">
             <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
+              <svg viewBox="0 0 24 24" className="h-12 w-12 fill-current">
+                <path d="M0 12C0 5.373 5.373 0 12 0c4.873 0 9.067 2.904 10.947 7.077l-15.87 15.87a11.981 11.981 0 0 1-1.935-1.099L14.99 12H12l-8.485 8.485A11.962 11.962 0 0 1 0 12Zm12.004 12L24 12.004C23.998 18.628 18.628 23.998 12.004 24Z" />
+              </svg>
+              <div className="space-y-2">
+                <h3 className="font-bold">Database</h3>
+                <p className="text-sm text-muted-foreground">
+                  mySQL databases hosted from Planetscale
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="relative overflow-hidden rounded-lg border bg-background p-2">
+            <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -117,7 +117,7 @@ export default function IndexPage() {
               <div className="space-y-2">
                 <h3 className="font-bold">Authentication</h3>
                 <p className="text-sm text-muted-foreground">
-                  Authentication using Clerk.com and middlewares.
+                  Authentication using Clerk.dev
                 </p>
               </div>
             </div>
@@ -130,7 +130,7 @@ export default function IndexPage() {
               <div className="space-y-2">
                 <h3 className="font-bold">Subscriptions</h3>
                 <p className="text-sm text-muted-foreground">
-                  Free and paid subscriptions using Stripe.
+                  Implemented payments using stripe checkout.
                 </p>
               </div>
             </div>
@@ -139,8 +139,7 @@ export default function IndexPage() {
         <div className="mx-auto text-center md:max-w-[58rem]">
           <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
             This list is not comprehensive. These are my go to digital products
-            for the job, there are many more technologies that make up a full
-            stack application.
+            for almost any project, and definitely where I am most familiar.
           </p>
         </div>
       </section>

@@ -1,7 +1,7 @@
 import * as React from "react"
 import Link from "next/link"
 
-import { NavItem } from "@/types/nav"
+import { NavItem, Projects } from "@/types/nav"
 import { siteConfig } from "@/config/site"
 import { Icons } from "@/components/icons"
 
@@ -18,9 +18,10 @@ import {
 
 interface MainNavProps {
   items?: NavItem[]
+  projects?: Projects[]
 }
 
-export function MainNav({ items }: MainNavProps) {
+export function MainNav({ items, projects }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-10">
       <Link href="/" className="flex items-center space-x-2">
@@ -38,9 +39,9 @@ export function MainNav({ items }: MainNavProps) {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
+              <NavigationMenuTrigger>Github Repos</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[700px] lg:grid-cols-[.65fr_1fr_1fr]">
                   <li className="row-span-3">
                     <NavigationMenuLink asChild>
                       <a
@@ -60,24 +61,17 @@ export function MainNav({ items }: MainNavProps) {
                       </a>
                     </NavigationMenuLink>
                   </li>
-                  <ListItem
-                    href={siteConfig.projects[0].href}
-                    title={siteConfig.projects[0].title}
-                  >
-                    {siteConfig.projects[0].description}
-                  </ListItem>
-                  <ListItem
-                    href={siteConfig.projects[1].href}
-                    title={siteConfig.projects[1].title}
-                  >
-                    {siteConfig.projects[1].description}
-                  </ListItem>
-                  <ListItem
-                    href="/docs/primitives/typography"
-                    title="Typography"
-                  >
-                    Styles for headings, paragraphs, lists...etc
-                  </ListItem>
+                  {projects?.length
+                    ? projects.map((project) => (
+                        <ListItem
+                          key={project.title}
+                          href={project.href}
+                          title={project.title}
+                        >
+                          {project.description}
+                        </ListItem>
+                      ))
+                    : null}
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
