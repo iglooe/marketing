@@ -10,3 +10,8 @@ export interface Projects {
   href?: string
   description?: string
 }
+
+export interface Urls {
+  title: string
+  href?: string
+}

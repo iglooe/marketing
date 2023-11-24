@@ -1,7 +1,7 @@
 import * as React from "react"
 import Link from "next/link"
 
-import { Projects } from "@/types/nav"
+import { Projects, Urls } from "@/types/nav"
 import { siteConfig } from "@/config/site"
 import { Icons } from "@/components/icons"
 
@@ -13,14 +13,14 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "./ui/navigation-menu"
 
 interface MainNavProps {
   projects?: Projects[]
+  urls?: Urls[]
 }
 
-export function MainNav({ projects }: MainNavProps) {
+export function MainNav({ projects, urls }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-10">
       <Link href="/" className="flex items-center space-x-2">
@@ -30,17 +30,9 @@ export function MainNav({ projects }: MainNavProps) {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <Link href="/" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Home
-                <span className="sr-only">Link to home</span>
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
             <NavigationMenuTrigger>Github Repos</NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[700px] lg:grid-cols-[.65fr_1fr_1fr]">
+              <ul className="grid gap-3 overflow-scroll p-6 md:w-[400px] lg:w-[700px] lg:grid-cols-[.65fr_1fr_1fr]">
                 <li className="row-span-3">
                   <NavigationMenuLink asChild>
                     <a
@@ -71,6 +63,25 @@ export function MainNav({ projects }: MainNavProps) {
                         title={project.title}
                       >
                         {project.description}
+                        <span className="sr-only">Link to project</span>
+                      </ListItem>
+                    ))
+                  : null}
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <NavigationMenuTrigger>Deployed</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="grid gap-3 overflow-scroll p-6 md:w-[400px] lg:w-[700px] lg:grid-cols-[1fr_1fr]">
+                {urls?.length
+                  ? urls.map((url) => (
+                      <ListItem
+                        key={url.title}
+                        href={url.href}
+                        title={url.title}
+                      >
+                        {url.href}
                         <span className="sr-only">Link to project</span>
                       </ListItem>
                     ))

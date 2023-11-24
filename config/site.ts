@@ -4,6 +4,24 @@ export const siteConfig = {
   name: "Derek",
   description:
     "Beautifully designed components built with Radix UI and Tailwind CSS.",
+  urls: [
+    {
+      title: "E-Commerce Shop",
+      href: "https://e-commerce-frontend-rose-beta.vercel.app/",
+    },
+    {
+      title: "Notary",
+      href: "https://note-taking-app-beige-zeta.vercel.app/",
+    },
+    {
+      title: "Birdle",
+      href: "https://birdle-teal.vercel.app/",
+    },
+    {
+      title: "Dictionary",
+      href: "https://dictionary-beta-ten.vercel.app/",
+    },
+  ],
   projects: [
     {
       title: "E-Commerce Shop",
